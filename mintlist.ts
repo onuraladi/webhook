@@ -28,7 +28,7 @@ const getMints = async () => {
 const createWebhook = async (mints) => {
     const url = `${BASE_URL}/v0/webhooks?api-key=${API_KEY}`;
     const { data } = await axios.post(url, {
-        webhookURL: 'https://server.example.xyz',
+        webhookURL: 'https://api.helius.xyz',
         transactionTypes: ['NFT_SALE'],
         accountAddresses: mints,
         webhookType: 'enhanced',
